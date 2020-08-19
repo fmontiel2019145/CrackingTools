@@ -17,7 +17,7 @@ import javafx.scene.control.TextField;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
-public class SepararCombosController implements Initializable{
+public class BorrarRepetidosController implements Initializable{
 
     private final Principal principal = new Principal();
     private Principal escenarioPrincipal;
@@ -150,8 +150,8 @@ public class SepararCombosController implements Initializable{
         this.escenarioPrincipal = escenarioPrincipal;
     }
     
-    public void ventanaSepararCombos(){
-        escenarioPrincipal.ventanaSepararCombos();
+    public void ventanaBorrarRepetidos(){
+        escenarioPrincipal.ventanaBorrarRepetidos();
     }
     
     public void menuPrincipal(){

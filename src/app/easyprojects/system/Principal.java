@@ -1,5 +1,6 @@
 package app.easyprojects.system;
 
+import app.easyprojects.controller.BorrarRepetidosController;
 import app.easyprojects.controller.MenuPrincipalController;
 import app.easyprojects.controller.SepararCombosController;
 import java.io.InputStream;
@@ -45,6 +46,15 @@ public class Principal extends Application {
     public void ventanaSepararCombos(){
         try{
             SepararCombosController sc = (SepararCombosController)cambiarEscena("SepararCombosView.fxml",876,458);
+            sc.setEscenarioPrincipal(this);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaBorrarRepetidos(){
+        try{
+            BorrarRepetidosController sc = (BorrarRepetidosController)cambiarEscena("BorrarRepetidosView.fxml",586,458);
             sc.setEscenarioPrincipal(this);
         }catch(Exception e){
             e.printStackTrace();

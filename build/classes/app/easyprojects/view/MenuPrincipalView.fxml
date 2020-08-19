@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.canvas.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.web.*?>
@@ -19,12 +20,12 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Separador de combos" textFill="WHITE">
+                  <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarRepetidos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar Repetidos" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Separador de combos" textFill="WHITE">
+                  <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar textos" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -38,6 +39,16 @@
             <Label layoutX="452.0" layoutY="8.0" prefHeight="25.0" prefWidth="144.0" text="By EasyProjects" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="44.0" fitWidth="52.0" layoutX="8.0" onMouseClicked="#abrirVentana" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/youtube.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="8.0" prefHeight="28.0" prefWidth="275.0" text="Sigueme en mis redes sociales" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
                </font>
             </Label>
          </children>
