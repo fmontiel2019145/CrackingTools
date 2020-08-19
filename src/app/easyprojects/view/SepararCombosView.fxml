@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="716.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.SepararCombosController">
+   <children>
+      <TextArea layoutX="249.0" layoutY="22.0" prefHeight="263.0" prefWidth="200.0" />
+      <TextArea layoutX="493.0" layoutY="22.0" prefHeight="263.0" prefWidth="200.0" />
+      <Separator layoutX="218.0" orientation="VERTICAL" prefHeight="362.0" prefWidth="11.0" />
+      <Button layoutX="33.0" layoutY="295.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: black;" text="Regresar al menu" textFill="#c9c9c9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
