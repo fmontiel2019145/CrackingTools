@@ -5,28 +5,40 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="716.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.SepararCombosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="876.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.SepararCombosController">
    <children>
-      <TextArea fx:id="txtArea1" layoutX="249.0" layoutY="22.0" prefHeight="263.0" prefWidth="200.0" />
-      <TextArea fx:id="txtArea2" layoutX="493.0" layoutY="22.0" prefHeight="263.0" prefWidth="200.0" />
-      <Separator layoutX="218.0" orientation="VERTICAL" prefHeight="362.0" prefWidth="11.0" />
-      <Button fx:id="btn" layoutX="33.0" layoutY="181.0" mnemonicParsing="false" onAction="#menuPrincipal" onMouseClicked="#menuPrincipal" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: black;" text="Regresar al menu" textFill="#c9c9c9">
+      <Separator layoutY="339.0" prefHeight="7.0" prefWidth="282.0" />
+      <TextArea fx:id="txtAreaEmails" layoutX="308.0" layoutY="22.0" prefHeight="363.0" prefWidth="252.0" />
+      <TextArea fx:id="txtAreaClaves" layoutX="600.0" layoutY="22.0" prefHeight="363.0" prefWidth="252.0" />
+      <Separator layoutX="277.0" orientation="VERTICAL" prefHeight="458.0" prefWidth="11.0" />
+      <Button fx:id="btn" layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onMouseClicked="#menuPrincipal" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Regresar" textFill="#c9c9c9">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn1" layoutX="33.0" layoutY="89.0" mnemonicParsing="false" onAction="#menuPrincipal" onMouseClicked="#menuPrincipal" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: black;" text="Seleccionar Combos" textFill="#c9c9c9">
+      <Button fx:id="btn1" layoutX="13.0" layoutY="105.0" mnemonicParsing="false" onMouseClicked="#getFile" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Seleccionar Combo" textFill="#c9c9c9">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn11" layoutX="269.0" layoutY="303.0" mnemonicParsing="false" onAction="#menuPrincipal" onMouseClicked="#menuPrincipal" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: blue;" text="Guardar Correos" textFill="WHITE">
+      <Button fx:id="btn11" layoutX="308.0" layoutY="400.0" mnemonicParsing="false" onAction="#menuPrincipal" onMouseClicked="#menuPrincipal" prefHeight="37.0" prefWidth="252.0" style="-fx-background-color: blue;" text="Guardar correos - ip´s" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn12" layoutX="513.0" layoutY="303.0" mnemonicParsing="false" onAction="#menuPrincipal" onMouseClicked="#menuPrincipal" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: blue;" text="Guardas Contraseñas" textFill="WHITE">
+      <Button fx:id="btn12" layoutX="600.0" layoutY="400.0" mnemonicParsing="false" onAction="#menuPrincipal" onMouseClicked="#menuPrincipal" prefHeight="37.0" prefWidth="252.0" style="-fx-background-color: blue;" text="Guardas claves - ports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtDelimitador" layoutX="13.0" layoutY="65.0" prefHeight="25.0" prefWidth="252.0" text=":" />
+      <Label layoutX="67.0" layoutY="5.0" prefHeight="34.0" prefWidth="145.0" text="Delimitador:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="39.0" prefHeight="17.0" prefWidth="145.0" text="correo:clave o ip:port" />
+      <Button fx:id="btn13" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#getFile" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Separar" textFill="#c9c9c9">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
