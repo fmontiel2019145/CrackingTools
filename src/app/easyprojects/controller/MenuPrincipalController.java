@@ -1,12 +1,8 @@
 package app.easyprojects.controller;
 
-<<<<<<< HEAD
 import app.easyprojects.api.NavegatorApi;
 import app.easyprojects.system.Principal;
 import java.io.IOException;
-=======
-import app.easyprojects.system.Principal;
->>>>>>> cambios
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -19,11 +15,8 @@ import javafx.scene.control.Button;
  */
 public class MenuPrincipalController implements Initializable {
     
-<<<<<<< HEAD
     private NavegatorApi navegatorApi = new NavegatorApi();
     
-=======
->>>>>>> cambios
     private Principal escenarioPrincipal;
     
     @FXML private Button btnSepararCombos;
@@ -44,16 +37,17 @@ public class MenuPrincipalController implements Initializable {
     public void setSeparadorCombos() {
         escenarioPrincipal.ventanaSepararCombos();
     }
-<<<<<<< HEAD
     
     public void setBorrarRepetidos() {
         escenarioPrincipal.ventanaBorrarRepetidos();
     }
     
+    public void setBorrarTextos() {
+        escenarioPrincipal.ventanaBorrarTextos();
+    }
+    
     public void abrirVentana() throws IOException{
         this.navegatorApi.abrirNavegadorPorDefecto("https://www.youtube.com/channel/UCTDilMoOGFanqQLwWSZLJAw");
     }
-=======
->>>>>>> cambios
 }
 

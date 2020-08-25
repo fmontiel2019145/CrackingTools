@@ -6,12 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Scanner;
-import java.util.Set;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -21,7 +17,7 @@ import javafx.scene.control.TextField;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
-public class BorrarRepetidosController implements Initializable{
+public class BorrarTextosController implements Initializable{
 
     private final Principal principal = new Principal();
     private Principal escenarioPrincipal;
@@ -31,22 +27,21 @@ public class BorrarRepetidosController implements Initializable{
     private PrintWriter pw;
     private File archivo;
     private Scanner entrada;
-    private List<String> colores = new ArrayList<String>();
-    
     private String ruta;
     private String saveRuta;
     
-    private String combo = "";
     
-    private String[] correos;
+    private String combo;
+    private String[] comboArray;
+   
     
     private int i;
     
     @FXML private Button btnSeleccionarArchivo;
-    @FXML private TextArea txtAreaEmails;
-    @FXML private TextArea txtAreaClaves;
-    @FXML private TextField txtDelimitador;
-    @FXML private ProgressIndicator proInProgreso;
+    @FXML private TextField txtBuscar;
+    @FXML private TextField txtRemplazar;
+    
+    @FXML private TextArea txtArea;
     
     public void getFile() {
         this.selectorArchivo = new JFileChooser();
@@ -77,41 +72,43 @@ public class BorrarRepetidosController implements Initializable{
     public void guardar() throws FileNotFoundException, UnsupportedEncodingException{
         saveFile();
         
-        this.correos = this.txtAreaEmails.getText().split("\n");
+        /*this.correos = this.txtArea.getText().split("\n");
         this.pw = new PrintWriter(this.saveRuta+".txt", "UTF-8");
         
         for(int i = 0; i < this.correos.length; i++){
             pw.println(this.correos[i]);
-        }
+        }*/
         
         pw.close();
         
         JOptionPane.showMessageDialog(null, "Guardado correctamente");
     }
     
-    public void lineas() throws FileNotFoundException{
+    public void borrar() throws FileNotFoundException{
         this.archivo = new File(ruta);
         
         this.entrada = new Scanner(this.archivo);
         
+        this.txtArea.setText("");
+        
+        this.btnSeleccionarArchivo.setText(this.ruta);
+        
+        this.i = 0;
+
+        String resultado = "";
+        
         while(this.entrada.hasNext()){
-            this.colores.add(this.entrada.nextLine());
-        }
-    }
-    
-    public void borrar() throws FileNotFoundException{
-        
-        lineas();
-         
-        Set<String> hashSet = new HashSet<String>(this.colores);
-        colores.clear();
-        colores.addAll(hashSet);
-        
-        for (String s : colores) {
-            this.combo += s+"\n";
+            this.combo = this.entrada.nextLine();
+
+            resultado += this.combo.replace(this.txtBuscar.getText(), this.txtRemplazar.getText())+"\n";
+
+            
+            this.i +=1;
         }
         
-        this.txtAreaEmails.setText(this.combo);
+        JOptionPane.showMessageDialog(null, "Separados Correctamente");
+        
+        this.txtArea.setText(resultado);
     }
     
     @Override
@@ -126,8 +123,8 @@ public class BorrarRepetidosController implements Initializable{
         this.escenarioPrincipal = escenarioPrincipal;
     }
     
-    public void ventanaBorrarRepetidos(){
-        escenarioPrincipal.ventanaBorrarRepetidos();
+    public void ventanaSepararCombos(){
+        escenarioPrincipal.ventanaSepararCombos();
     }
     
     public void menuPrincipal(){

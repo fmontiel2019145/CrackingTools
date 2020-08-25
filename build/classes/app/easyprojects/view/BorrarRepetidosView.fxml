@@ -22,7 +22,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btn11" layoutX="308.0" layoutY="400.0" mnemonicParsing="false" onAction="#guardarCorreos" prefHeight="37.0" prefWidth="252.0" style="-fx-background-color: blue;" text="Guardar Archivo" textFill="WHITE">
+      <Button fx:id="btn11" layoutX="308.0" layoutY="400.0" mnemonicParsing="false" onAction="#guardar" prefHeight="37.0" prefWidth="252.0" style="-fx-background-color: blue;" text="Guardar Archivo" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -32,7 +32,7 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <Button fx:id="btn13" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#separar" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Borrar" textFill="#c9c9c9">
+      <Button fx:id="btn13" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#borrar" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Borrar" textFill="#c9c9c9">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

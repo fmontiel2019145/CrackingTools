@@ -1,6 +1,5 @@
 package app.easyprojects.controller;
 
-<<<<<<< HEAD
 import app.easyprojects.system.Principal;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -137,37 +136,10 @@ public class SepararCombosController implements Initializable{
         
         this.txtAreaEmails.setText(this.emails);
         this.txtAreaClaves.setText(this.claves);
-=======
-import app.easyprojects.api.Files;
-import app.easyprojects.system.Principal;
-import java.io.FileNotFoundException;
-import java.net.URL;
-import java.util.ResourceBundle;
-import java.util.Scanner;
-import javafx.fxml.Initializable;
-
-public class SepararCombosController implements Initializable{
-
-    private Principal principal = new Principal();
-    private Files file = new Files();
-    private Scanner entrada;
-    private Principal escenarioPrincipal;
-    
-    public void getFile() throws FileNotFoundException{
-        this.entrada = this.file.readFile();
-        
-        while(entrada.hasNext()){
-            
-        }
->>>>>>> cambios
     }
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-<<<<<<< HEAD
-=======
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
->>>>>>> cambios
     }
     
     public Principal getEscenarioPrincipal() {

@@ -7,17 +7,17 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="586.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.BorrarRepetidosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="586.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.BorrarTextosController">
    <children>
       <Separator layoutY="337.0" prefHeight="9.0" prefWidth="282.0" style="-fx-background-color: #e5e5e5e;" />
-      <TextArea fx:id="txtAreaEmails" layoutX="308.0" layoutY="22.0" prefHeight="363.0" prefWidth="252.0" />
+      <TextArea fx:id="txtArea" layoutX="308.0" layoutY="22.0" prefHeight="363.0" prefWidth="252.0" />
       <Separator layoutX="277.0" orientation="VERTICAL" prefHeight="458.0" prefWidth="11.0" />
       <Button fx:id="btn" layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onMouseClicked="#menuPrincipal" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Regresar" textFill="#c9c9c9">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btnSeleccionarArchivo" layoutX="14.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#getFile" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Seleccionar archivo" textFill="#c9c9c9">
+      <Button fx:id="btnSeleccionarArchivo" layoutX="16.0" layoutY="204.0" mnemonicParsing="false" onMouseClicked="#getFile" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Seleccionar archivo" textFill="#c9c9c9">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -27,7 +27,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="52.0" layoutY="14.0" prefHeight="34.0" prefWidth="179.0" text="Borrar repetidos">
+      <Label layoutX="52.0" layoutY="14.0" prefHeight="34.0" prefWidth="179.0" text="Borrar textos">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
@@ -37,5 +37,17 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
+      <TextField fx:id="txtBuscar" layoutX="16.0" layoutY="85.0" prefHeight="25.0" prefWidth="252.0" />
+      <TextField fx:id="txtRemplazar" layoutX="16.0" layoutY="154.0" prefHeight="25.0" prefWidth="252.0" />
+      <Label layoutX="16.0" layoutY="59.0" text="Buscar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="126.0" text="Reemplazar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
