@@ -1,7 +1,14 @@
 package app.easyprojects.system;
 
+<<<<<<< HEAD
 import app.easyprojects.controller.BorrarRepetidosController;
 import app.easyprojects.controller.BorrarTextosController;
+=======
+<<<<<<< HEAD
+import app.easyprojects.controller.BorrarRepetidosController;
+=======
+>>>>>>> cambios
+>>>>>>> cambios
 import app.easyprojects.controller.MenuPrincipalController;
 import app.easyprojects.controller.SepararCombosController;
 import java.io.InputStream;
@@ -46,6 +53,10 @@ public class Principal extends Application {
     
     public void ventanaSepararCombos(){
         try{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cambios
             SepararCombosController sc = (SepararCombosController)cambiarEscena("SepararCombosView.fxml",876,458);
             sc.setEscenarioPrincipal(this);
         }catch(Exception e){
@@ -56,6 +67,7 @@ public class Principal extends Application {
     public void ventanaBorrarRepetidos(){
         try{
             BorrarRepetidosController sc = (BorrarRepetidosController)cambiarEscena("BorrarRepetidosView.fxml",586,458);
+<<<<<<< HEAD
             sc.setEscenarioPrincipal(this);
         }catch(Exception e){
             e.printStackTrace();
@@ -65,6 +77,11 @@ public class Principal extends Application {
     public void ventanaBorrarTextos(){
         try{
             BorrarTextosController sc = (BorrarTextosController)cambiarEscena("BorrarTextosView.fxml",586,458);
+=======
+=======
+            SepararCombosController sc = (SepararCombosController)cambiarEscena("SepararCombosView.fxml",716,362);
+>>>>>>> cambios
+>>>>>>> cambios
             sc.setEscenarioPrincipal(this);
         }catch(Exception e){
             e.printStackTrace();

@@ -8,7 +8,15 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
     <jar href="CrackingTools.jar" size="118469" download="eager" />
+=======
+<<<<<<< HEAD
+    <jar href="CrackingTools.jar" size="116826" download="eager" />
+=======
+    <jar href="CrackingTools.jar" size="89028" download="eager" />
+>>>>>>> cambios
+>>>>>>> cambios
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CrackingTools" >
     <param name="requiredFXVersion" value="8.0+"/>

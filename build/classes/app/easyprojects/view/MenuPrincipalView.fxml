@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.scene.image.*?>
+=======
+<<<<<<< HEAD
+<?import javafx.scene.image.*?>
+=======
+>>>>>>> cambios
+>>>>>>> cambios
 <?import javafx.scene.canvas.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.web.*?>
@@ -20,12 +27,28 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
+<<<<<<< HEAD
                   <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarRepetidos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar Repetidos" textFill="WHITE">
+=======
+<<<<<<< HEAD
+                  <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarRepetidos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar Repetidos" textFill="WHITE">
+=======
+                  <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Separador de combos" textFill="WHITE">
+>>>>>>> cambios
+>>>>>>> cambios
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
+<<<<<<< HEAD
                   <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar textos" textFill="WHITE">
+=======
+<<<<<<< HEAD
+                  <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar textos" textFill="WHITE">
+=======
+                  <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Separador de combos" textFill="WHITE">
+>>>>>>> cambios
+>>>>>>> cambios
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -41,6 +64,10 @@
                   <Font name="System Bold" size="19.0" />
                </font>
             </Label>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cambios
             <ImageView fitHeight="44.0" fitWidth="52.0" layoutX="8.0" onMouseClicked="#abrirVentana" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/youtube.png" />
@@ -51,6 +78,11 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> cambios
+>>>>>>> cambios
          </children>
       </Pane>
       <Pane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: black;">
