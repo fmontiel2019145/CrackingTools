@@ -8,7 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-public class ProxysController implements Initializable{
+public class DorksGeneratorController implements Initializable{
     private final Principal principal = new Principal();
     private Principal escenarioPrincipal;
     
@@ -17,7 +17,7 @@ public class ProxysController implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         final WebEngine web = this.pagina.getEngine();
-        String url = "http://proxys.helpop.rf.gd/";
+        String url = "http://dorks.helpop.rf.gd/";
         web.load(url);
     }
     

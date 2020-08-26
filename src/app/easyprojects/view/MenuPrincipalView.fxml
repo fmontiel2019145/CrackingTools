@@ -9,49 +9,64 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.MenuPrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="762.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.MenuPrincipalController">
    <children>
-      <ScrollPane layoutY="66.0" prefHeight="296.0" prefWidth="600.0" style="-fx-background-color: orange;">
+      <ScrollPane layoutY="66.0" prefHeight="403.0" prefWidth="762.0" style="-fx-background-color: orange;">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="293.0" prefWidth="598.0" style="-fx-background-color: orange;">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="401.0" prefWidth="760.0" style="-fx-background-color: orange;">
                <children>
-                  <Button fx:id="btnSepararCombos" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#setSeparadorCombos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Separador de combos" textFill="WHITE">
+                  <Button fx:id="btnSepararCombos" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#setSeparadorCombos" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Separador de combos" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="13.0" />
+                        <Font name="System Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarRepetidos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar Repetidos" textFill="WHITE">
+                  <Button layoutX="285.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarRepetidos" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Borrar Repetidos" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="13.0" />
+                        <Font name="System Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar textos" textFill="WHITE">
+                  <Button layoutX="553.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Borrar textos" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="13.0" />
+                        <Font name="System Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="221.0" mnemonicParsing="false" onAction="#setCcGen" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Credit Card Gen" textFill="WHITE">
+                  <Button layoutX="14.0" layoutY="203.0" mnemonicParsing="false" onAction="#setCcGen" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Credit Card Gen" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="13.0" />
+                        <Font name="System Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Button layoutX="423.0" layoutY="221.0" mnemonicParsing="false" onAction="#setBinChecker" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Bin Checker" textFill="WHITE">
+                  <Button layoutX="284.0" layoutY="203.0" mnemonicParsing="false" onAction="#setProxys" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Proxys" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="13.0" />
+                        <Font name="System Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Button layoutX="219.0" layoutY="221.0" mnemonicParsing="false" onAction="#setProxys" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Proxys" textFill="WHITE">
+                  <Button layoutX="553.0" layoutY="117.0" mnemonicParsing="false" onAction="#setDorksGenerator" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Generador de Dorks" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="13.0" />
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="117.0" mnemonicParsing="false" onAction="#setSmsOnline" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Sms Online" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="553.0" layoutY="203.0" mnemonicParsing="false" onAction="#setBinChecker" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Bin Checker" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="285.0" layoutY="117.0" mnemonicParsing="false" onAction="#setTemporalMail" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #0000A0;" text="Correo Temporal" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
                      </font>
                   </Button>
                </children>
             </AnchorPane>
         </content>
       </ScrollPane>
-      <Pane layoutY="362.0" prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: black;">
+      <Pane layoutY="468.0" prefHeight="44.0" prefWidth="762.0" style="-fx-background-color: black;">
          <children>
-            <Label layoutX="452.0" layoutY="8.0" prefHeight="25.0" prefWidth="144.0" text="By EasyProjects" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="610.0" layoutY="8.0" prefHeight="25.0" prefWidth="144.0" text="By EasyProjects" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -68,9 +83,9 @@
             </Label>
          </children>
       </Pane>
-      <Pane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: black;">
+      <Pane prefHeight="65.0" prefWidth="762.0" style="-fx-background-color: black;">
          <children>
-            <Label layoutX="169.0" layoutY="5.0" text="Cracking tools" textFill="#fcfcfc">
+            <Label layoutX="265.0" layoutY="5.0" text="Cracking tools" textFill="#fcfcfc">
                <font>
                   <Font name="System Bold" size="39.0" />
                </font>
@@ -80,7 +95,7 @@
                   <Image url="@../image/telegram.png" />
                </image>
             </ImageView>
-            <Button layoutX="512.0" layoutY="15.0" mnemonicParsing="false" onAction="#setBlog" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="74.0" style="-fx-background-color: #0000A0;" text="Blog" textFill="WHITE">
+            <Button layoutX="674.0" layoutY="15.0" mnemonicParsing="false" onAction="#setBlog" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="74.0" style="-fx-background-color: #0000A0;" text="Blog" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>

@@ -17,7 +17,7 @@ public class BinCheckerController implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         final WebEngine web = this.pagina.getEngine();
-        String url = "https://bincheck.org/";
+        String url = "http://bin-check.helpop.rf.gd";
         web.load(url);
     }
     

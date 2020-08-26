@@ -5,9 +5,12 @@ import app.easyprojects.controller.BlogController;
 import app.easyprojects.controller.BorrarRepetidosController;
 import app.easyprojects.controller.BorrarTextosController;
 import app.easyprojects.controller.CcGenController;
+import app.easyprojects.controller.DorksGeneratorController;
 import app.easyprojects.controller.MenuPrincipalController;
 import app.easyprojects.controller.ProxysController;
 import app.easyprojects.controller.SepararCombosController;
+import app.easyprojects.controller.SmsOnlineController;
+import app.easyprojects.controller.TemporalMailController;
 import java.io.InputStream;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -41,7 +44,7 @@ public class Principal extends Application {
     
     public void menuPrincipal(){
         try{
-            MenuPrincipalController menuPrincipal = (MenuPrincipalController)cambiarEscena("MenuPrincipalView.fxml",600,406);
+            MenuPrincipalController menuPrincipal = (MenuPrincipalController)cambiarEscena("MenuPrincipalView.fxml",762,512);
             menuPrincipal.setEscenarioPrincipal(this);
         }catch(Exception e){
             e.printStackTrace();
@@ -105,6 +108,33 @@ public class Principal extends Application {
     public void ventanaProxys(){
         try{
             ProxysController sc = (ProxysController)cambiarEscena("ProxysView.fxml", 892, 623);
+            sc.setEscenarioPrincipal(this);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaDorksGenerator(){
+        try{
+            DorksGeneratorController sc = (DorksGeneratorController)cambiarEscena("DorksGeneratorView.fxml", 892, 623);
+            sc.setEscenarioPrincipal(this);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaSmsOnline(){
+        try{
+            SmsOnlineController sc = (SmsOnlineController)cambiarEscena("SmsOnlineView.fxml", 892, 623);
+            sc.setEscenarioPrincipal(this);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaTemporalMail(){
+        try{
+            TemporalMailController sc = (TemporalMailController)cambiarEscena("TemporalMailView.fxml", 892, 623);
             sc.setEscenarioPrincipal(this);
         }catch(Exception e){
             e.printStackTrace();

@@ -8,7 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-public class ProxysController implements Initializable{
+public class TemporalMailController implements Initializable{
     private final Principal principal = new Principal();
     private Principal escenarioPrincipal;
     
@@ -16,8 +16,11 @@ public class ProxysController implements Initializable{
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        String userAgent = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36";
         final WebEngine web = this.pagina.getEngine();
-        String url = "http://proxys.helpop.rf.gd/";
+        web.setJavaScriptEnabled(true);
+        web.setUserAgent(userAgent);
+        String url = "http://tempmail.helpop.rf.gd/";
         web.load(url);
     }
     

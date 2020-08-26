@@ -61,6 +61,18 @@ public class MenuPrincipalController implements Initializable {
     public void setProxys() {
         escenarioPrincipal.ventanaProxys();
     }
+            
+    public void setDorksGenerator() {
+        escenarioPrincipal.ventanaDorksGenerator();
+    }
+    
+    public void setSmsOnline() {
+        escenarioPrincipal.ventanaSmsOnline();
+    }
+    
+    public void setTemporalMail() {
+        escenarioPrincipal.ventanaTemporalMail();
+    }
     
     public void abrirYoutube() throws IOException{
         this.navegatorApi.abrirNavegadorPorDefecto("https://www.youtube.com/channel/UCTDilMoOGFanqQLwWSZLJAw");
