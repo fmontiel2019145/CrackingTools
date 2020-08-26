@@ -1,15 +1,12 @@
 package app.easyprojects.system;
 
-<<<<<<< HEAD
+import app.easyprojects.controller.BinCheckerController;
+import app.easyprojects.controller.BlogController;
 import app.easyprojects.controller.BorrarRepetidosController;
 import app.easyprojects.controller.BorrarTextosController;
-=======
-<<<<<<< HEAD
-import app.easyprojects.controller.BorrarRepetidosController;
-=======
->>>>>>> cambios
->>>>>>> cambios
+import app.easyprojects.controller.CcGenController;
 import app.easyprojects.controller.MenuPrincipalController;
+import app.easyprojects.controller.ProxysController;
 import app.easyprojects.controller.SepararCombosController;
 import java.io.InputStream;
 import javafx.application.Application;
@@ -53,10 +50,6 @@ public class Principal extends Application {
     
     public void ventanaSepararCombos(){
         try{
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> cambios
             SepararCombosController sc = (SepararCombosController)cambiarEscena("SepararCombosView.fxml",876,458);
             sc.setEscenarioPrincipal(this);
         }catch(Exception e){
@@ -66,8 +59,7 @@ public class Principal extends Application {
     
     public void ventanaBorrarRepetidos(){
         try{
-            BorrarRepetidosController sc = (BorrarRepetidosController)cambiarEscena("BorrarRepetidosView.fxml",586,458);
-<<<<<<< HEAD
+            BorrarRepetidosController sc = (BorrarRepetidosController)cambiarEscena("BorrarRepetidosView.fxml", 586, 458);
             sc.setEscenarioPrincipal(this);
         }catch(Exception e){
             e.printStackTrace();
@@ -76,12 +68,43 @@ public class Principal extends Application {
     
     public void ventanaBorrarTextos(){
         try{
-            BorrarTextosController sc = (BorrarTextosController)cambiarEscena("BorrarTextosView.fxml",586,458);
-=======
-=======
-            SepararCombosController sc = (SepararCombosController)cambiarEscena("SepararCombosView.fxml",716,362);
->>>>>>> cambios
->>>>>>> cambios
+            BorrarTextosController sc = (BorrarTextosController)cambiarEscena("BorrarTextosView.fxml", 586, 458);
+            sc.setEscenarioPrincipal(this);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaCcGen(){
+        try{
+            CcGenController sc = (CcGenController)cambiarEscena("CcGenView.fxml", 892, 623);
+            sc.setEscenarioPrincipal(this);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaBinChecker(){
+        try{
+            BinCheckerController sc = (BinCheckerController)cambiarEscena("BinCheckerView.fxml", 892, 623);
+            sc.setEscenarioPrincipal(this);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaBlog(){
+        try{
+            BlogController sc = (BlogController)cambiarEscena("BlogView.fxml", 892, 623);
+            sc.setEscenarioPrincipal(this);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaProxys(){
+        try{
+            ProxysController sc = (ProxysController)cambiarEscena("ProxysView.fxml", 892, 623);
             sc.setEscenarioPrincipal(this);
         }catch(Exception e){
             e.printStackTrace();

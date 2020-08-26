@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<<<<<<< HEAD
 <?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
-=======
-<<<<<<< HEAD
-<?import javafx.scene.image.*?>
-<?import javafx.scene.shape.*?>
-=======
->>>>>>> cambios
->>>>>>> cambios
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> cambios
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="876.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.SepararCombosController">
    <children>
       <Separator layoutY="337.0" prefHeight="9.0" prefWidth="282.0" style="-fx-background-color: #e5e5e5e;" />
@@ -53,18 +41,6 @@
       </Label>
       <Label layoutX="81.0" layoutY="39.0" prefHeight="17.0" prefWidth="145.0" text="correo:clave o ip:port" />
       <Button fx:id="btn13" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#separar" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: black;" text="Separar" textFill="#c9c9c9">
-<<<<<<< HEAD
-=======
-=======
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="716.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.easyprojects.controller.SepararCombosController">
-   <children>
-      <TextArea layoutX="249.0" layoutY="22.0" prefHeight="263.0" prefWidth="200.0" />
-      <TextArea layoutX="493.0" layoutY="22.0" prefHeight="263.0" prefWidth="200.0" />
-      <Separator layoutX="218.0" orientation="VERTICAL" prefHeight="362.0" prefWidth="11.0" />
-      <Button layoutX="33.0" layoutY="295.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: black;" text="Regresar al menu" textFill="#c9c9c9">
->>>>>>> cambios
->>>>>>> cambios
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

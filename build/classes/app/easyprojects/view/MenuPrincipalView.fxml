@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<<<<<<< HEAD
 <?import javafx.scene.image.*?>
-=======
-<<<<<<< HEAD
-<?import javafx.scene.image.*?>
-=======
->>>>>>> cambios
->>>>>>> cambios
 <?import javafx.scene.canvas.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.web.*?>
@@ -27,28 +20,27 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-<<<<<<< HEAD
                   <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarRepetidos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar Repetidos" textFill="WHITE">
-=======
-<<<<<<< HEAD
-                  <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarRepetidos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar Repetidos" textFill="WHITE">
-=======
-                  <Button layoutX="219.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Separador de combos" textFill="WHITE">
->>>>>>> cambios
->>>>>>> cambios
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-<<<<<<< HEAD
                   <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar textos" textFill="WHITE">
-=======
-<<<<<<< HEAD
-                  <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Borrar textos" textFill="WHITE">
-=======
-                  <Button layoutX="423.0" layoutY="21.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Separador de combos" textFill="WHITE">
->>>>>>> cambios
->>>>>>> cambios
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="221.0" mnemonicParsing="false" onAction="#setCcGen" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Credit Card Gen" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="423.0" layoutY="221.0" mnemonicParsing="false" onAction="#setBinChecker" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Bin Checker" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="219.0" layoutY="221.0" mnemonicParsing="false" onAction="#setProxys" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #0000A0;" text="Proxys" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -64,25 +56,16 @@
                   <Font name="System Bold" size="19.0" />
                </font>
             </Label>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> cambios
-            <ImageView fitHeight="44.0" fitWidth="52.0" layoutX="8.0" onMouseClicked="#abrirVentana" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="44.0" fitWidth="52.0" layoutX="8.0" onMouseClicked="#abrirYoutube" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/youtube.png" />
                </image>
             </ImageView>
-            <Label layoutX="59.0" layoutY="8.0" prefHeight="28.0" prefWidth="275.0" text="Sigueme en mis redes sociales" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="59.0" layoutY="8.0" prefHeight="28.0" prefWidth="221.0" text="Sigueme en mis redes sociales" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> cambios
->>>>>>> cambios
          </children>
       </Pane>
       <Pane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: black;">
@@ -92,6 +75,16 @@
                   <Font name="System Bold" size="39.0" />
                </font>
             </Label>
+            <ImageView fitHeight="56.0" fitWidth="53.0" layoutX="7.0" layoutY="6.0" onMouseClicked="#abrirTelegram" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/telegram.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="512.0" layoutY="15.0" mnemonicParsing="false" onAction="#setBlog" onMouseClicked="#setBorrarTextos" prefHeight="36.0" prefWidth="74.0" style="-fx-background-color: #0000A0;" text="Blog" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

@@ -32,7 +32,7 @@ public class BorrarTextosController implements Initializable{
     
     
     private String combo;
-    private String[] comboArray;
+    private String[] combos;
    
     
     private int i;
@@ -72,12 +72,12 @@ public class BorrarTextosController implements Initializable{
     public void guardar() throws FileNotFoundException, UnsupportedEncodingException{
         saveFile();
         
-        /*this.correos = this.txtArea.getText().split("\n");
+        this.combos = this.txtArea.getText().split("\n");
         this.pw = new PrintWriter(this.saveRuta+".txt", "UTF-8");
         
-        for(int i = 0; i < this.correos.length; i++){
-            pw.println(this.correos[i]);
-        }*/
+        for(int i = 0; i < this.combos.length; i++){
+            pw.println(this.combos[i]);
+        }
         
         pw.close();
         
